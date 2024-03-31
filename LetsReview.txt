@@ -1,0 +1,36 @@
+import Foundation
+//import Darwin
+
+let numStrings = Int(readLine()!)!
+
+func printEvenAndOdd(string: String) {
+    var evenString = ""
+    var oddString = ""
+
+    // This prints inputString to stderr for debugging:
+    fputs("string: " + string + "\n", stderr)
+	for (index, value)  in string.enumerated() {
+        if index % 2 == 0 {
+            evenString.append(value)
+        }
+    }
+    // Print the even-indexed characters
+    // Write your code here
+    
+    // Print a space
+    //print(" ", terminator: "")
+	
+        for (index, value)  in string.enumerated() {
+        if index % 2 != 0 {
+            oddString.append(value)
+        }
+    }
+    print("\(evenString) \(oddString)")
+
+  //  print()
+}
+
+for _ in 1...numStrings {
+    let inputString = readLine()!
+    printEvenAndOdd(string: inputString)
+}
