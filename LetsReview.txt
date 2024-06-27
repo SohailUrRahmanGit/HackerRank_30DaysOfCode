@@ -13,13 +13,7 @@ func printEvenAndOdd(string: String) {
         if index % 2 == 0 {
             evenString.append(value)
         }
-    }
-    // Print the even-indexed characters
-    // Write your code here
-    
-    // Print a space
-    //print(" ", terminator: "")
-	
+    }	
         for (index, value)  in string.enumerated() {
         if index % 2 != 0 {
             oddString.append(value)
